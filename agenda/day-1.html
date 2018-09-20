@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ELEVATE</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web:400,600,700">
+    <link rel="stylesheet" href="assets/css/Button-Change-Text-on-Hover.css">
+    <link rel="stylesheet" href="assets/css/Card-Group-Classic.css">
+    <link rel="stylesheet" href="assets/css/Carousel-Hero.css">
+    <link rel="stylesheet" href="assets/css/Countdown.css">
+    <link rel="stylesheet" href="assets/css/Header-Blue.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="assets/css/ImageHeader.css">
+    <link rel="stylesheet" href="assets/css/Navigation-with-Button.css">
+    <link rel="stylesheet" href="assets/css/Registration-Form-with-Photo.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/untitled.css">
+    <style type="text/css">
+        h3, h4 {
+            font-size: 18px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        h5 {
+            font-size: 14px;
+            font-weight: bold;
+            line-height: 1.2em;
+            letter-spacing: 0.5px;
+            margin-bottom: 20px;
+            color: #001139;            
+        }
+        p {
+            font-size: 16px;
+            max-width: none;
+            margin-top: 0;
+            margin-bottom: 1rem;            
+            margin-bottom: 20px;
+            text-align: left;
+        }         
+        .agenda-title {
+            padding-top: 20px;
+            padding-bottom: 20px;
+            background-color: transparent;
+            border: 4px solid #0089bc;
+            border-radius: 0;
+        }
+        .agenda-title span {
+            color: #0089bc;
+            font-weight: bold;
+        }
+
+        .text-uppercase {
+            text-transform: uppercase;
+        }
+
+        .agenda-time h4 {
+            color: #0089bc;
+        }
+
+        .timing-set, .agenda-timing-set {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+        }
+        .img-responsive {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+        @media (min-width: 768px){
+        .dl-horizontal dt {
+            float: left;
+            width: 160px;
+            overflow: hidden;
+            clear: left;
+            text-align: right;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        }
+        dt {
+            font-weight: 700;
+        }
+        dd, dt {
+            line-height: 1.42857143;
+        }
+        @media (min-width: 768px){
+        .dl-horizontal dd {
+            margin-left: 180px;
+        }
+        }
+        dd {
+            margin-left: 0;
+        }
+        .timing-set .speakers-list, .agenda-timing-set .speakers-list {
+            list-style: none;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-md navigation-clean-button" style="padding:10px;background-size:contain;">
+        <div class="container"><a class="navbar-brand" href="#">ELEVATE</a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse"
+                id="navcol-1">
+                <ul class="nav navbar-nav mr-auto">
+                    <li class="nav-item pulse animated" role="presentation"><a class="nav-link active" href="#">Home</a></li>
+                    <li class="nav-item pulse animated" role="presentation"><a class="nav-link" href="#">About</a></li>
+                    <li class="nav-item pulse animated" role="presentation"><a class="nav-link" href="#">Agenda</a></li>
+                    <li class="nav-item pulse animated" role="presentation"><a class="nav-link" href="#">Download Brochure</a></li>
+                    <li class="dropdown"><a class="dropdown-toggle nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#">Speakers</a>
+                        <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="#">Vaclac Koranda (T-System)</a><a class="dropdown-item" role="presentation" href="#">Chen Fong Tuan (Mahsing)</a><a class="dropdown-item" role="presentation" href="#">Chinmay Sharma (Philip Morris International)</a>
+                            <a
+                                class="dropdown-item" role="presentation" href="#">Timothy Tiah (Colony)</a><a class="dropdown-item" role="presentation" href="#">Audra Pakalnyte<strong>&nbsp;</strong>(Fave)</a><a class="dropdown-item" role="presentation" href="#">Derek Toh (WOBB)</a><a class="dropdown-item"
+                                    role="presentation" href="#">Christoffer Erichsen (Human Inc)</a><a class="dropdown-item" role="presentation" href="#">Adrian Lim (VLT)</a><a class="dropdown-item" role="presentation" href="#">Ann Tan (Schneider Electric)</a>
+                                <a
+                                    class="dropdown-item" role="presentation" href="#">Francesca Chia (Go Get)</a><a class="dropdown-item" role="presentation" href="#">Janet Lee (95 percent)<br></a><a class="dropdown-item" role="presentation" href="#">Kenny Ong (Universal Music Group)</a><a class="dropdown-item"
+                                        role="presentation" href="#">Michael Teoh (Thriving Talents)</a></div>
+                    </li>
+                </ul><span class="navbar-text actions"> <a href="#" class="login"></a><a class="btn btn-light action-button" role="button" href="#" style="background-color:#56c6c6;">Book Tickets</a></span></div>
+
+        </div>
+
+    </nav>        
+    <div class="container schedule-container">
+    <div class="row">
+     <div class="col-md-12 main-column">
+   <h2 class="text-center date">
+      23 October 2018 (Tuesday)                        
+   </h2>
+   <div class="row agenda-title">
+      <div class="col-sm-2"><span class="text-uppercase">Time</span></div>
+      <div class="col-sm-10"><span class="text-uppercase">Programme</span></div>
+   </div>
+   <div class="row agenda-timing-set">
+      <div class="col-sm-2 agenda-time">
+         <h4 class="text-uppercase">
+            9.00am                                        
+         </h4>
+      </div>
+      <div class="col-sm-10">
+         <h4>
+            Opening                                        
+         </h4>
+         <div class="row">
+         </div>
+      </div>
+   </div>
+   <div class="row agenda-timing-set">
+      <div class="col-sm-2 agenda-time">
+         <h4 class="text-uppercase">
+            9.10am                                        
+         </h4>
+      </div>
+      <div class="col-sm-10">
+         <h4>
+            KEYNOTE SPEECH                                       
+         </h4>
+         <div class="row">
+         </div>
+      </div>
+   </div>
+   <div class="row agenda-timing-set">
+      <div class="col-sm-2 agenda-time">
+         <h4 class="text-uppercase">
+            9:30am                                        
+         </h4>
+      </div>
+      <div class="col-sm-10">
+         <h4>
+            PANEL DISCUSSION 1:
+            <p><b>Developing a Culture of People Development and On-The-Job Coaching</p>
+         </h4>
+            <li>Providing open channels for communication with real time feedback – Moving towards continuous performance management and qualitative feedback</li>
+            <li>Embedding recognition, rewards and opportunities/progression in people development strategies</li>
+            <li>Utilizing performance management and profiling tools to create progression plans, track employee progress and discover hidden strengths</li>
+            <p>
+            </p>
+            <p>Panelists:
+              <div style="display: flex; margin-bottom: 12px;">
+                <div style="flex: 0 1 160px; margin-right: 8px;">
+                  <a class="name" href="speakers/anna-tan.html">
+                    <img src="assets/img/schneider-electric.jpg" class="img-responsive">
+                 </a>
+                </div>
+                <div style="flex: 0 1 auto;">
+                  <a class="name" href="speakers/anna-tan.html">Anna Tan</a>,
+                  <span class="designation small"><em>Country HR Director</em></span>,
+                  <span class="company small"><b>Schneider Electric</b></span>                   
+                </div> 
+              </div>
+              <div style="display: flex; margin-bottom: 12px;">
+                <div style="flex: 0 1 160px; margin-right: 8px;">
+                  <a class="name" href="speakers/datuk-jake">
+                    <img src="assets/img/astro.jpg" class="img-responsive">
+                 </a>
+                </div>
+                <div style="flex: 0 1 auto;">
+                  <a class="name" href="speakers/datuk-jake">Datuk Jake Abdullah</a>,
+                  <span class="designation small"><em>Chief Executive Officer</em></span>,
+                  <span class="company small"><b>Astro Radio</b></span>                   
+                </div> 
+              </div> 
+              <div style="display: flex; margin-bottom: 12px;">
+                <div style="flex: 0 1 160px; margin-right: 8px;">
+                  <a class="name" href="speakers/michael-teoh.html">
+                    <img src="assets/img/thriving-talents.jpg" class="img-responsive">
+                 </a>
+                </div>
+                <div style="flex: 0 1 auto;">
+                  <a class="name" href="speakers/michael-teoh.html">Michael Teoh</a>,
+                  <span class="designation small"><em>Founder</em></span>,
+                  <span class="company small"><b>Thriving Talents</b></span>                   
+                </div> 
+              </div>
+              <div style="display: flex; margin-bottom: 12px;">
+                <div style="flex: 0 1 160px; margin-right: 8px;">
+                  <a class="name" href="speakers/timothy-tiah.html">
+                    <img src="assets/img/colony.jpg" class="img-responsive">
+                 </a>
+                </div>
+                <div style="flex: 0 1 auto;">
+                  <a class="name" href="speakers/timothy-tiah.html">Timothy Tiah</a>,
+                  <span class="designation small"><em>Executive Director</em></span>,
+                  <span class="company small"><b>Colony</b></span>                   
+                </div> 
+              </div>           
+         <div class="row">
+         </div>
+      </div>
+   </div>
+   <div class="row agenda-timing-set">
+      <div class="col-sm-2 agenda-time">
+         <h4 class="text-uppercase">
+            10.30am                                        
+         </h4>
+      </div>
+      <div class="col-sm-10">
+         <h4>
+            Morning Refreshments                                       
+         </h4>
+         <div class="row">
+         </div>
+      </div>
+   </div>
+   <div class="row agenda-timing-set">
+      <div class="col-sm-2 agenda-time">
+         <h4 class="text-uppercase">
+            11.00am                                        
+         </h4>
+      </div>
+      <div class="col-sm-10">
+         <h4>
+            TOPIC 1:
+            <p>Mindfulness at Work and How to Use it in the Workplace</p>                 
+         </h4>
+         <div class="row">
+         </div>
+      </div>
+   </div>
+   <div class="row agenda-timing-set">
+      <div class="col-sm-2 agenda-time">
+         <h4 class="text-uppercase">
+            11.45am                                        
+         </h4>
+      </div>
+      <div class="col-sm-10">
+         <h4>
+            TOPIC 2:
+            <p><b>Early Career Acceleration: The Schneider Electric Experience</p>
+         </h4>
+            <p>There is now a demand for tomorrow's leaders that is rapidly outpacing their supply and the retetion of high-potential employees is a major concern in many organisations. Schneider Electric, through an early career acceleration programme, focuses on identifying and cultivating the strengths of its employees to efficiently monitor, develop and accelerate capable leaders early in their career.</p>
+            <p>
+            </p>
+            <p>Panelists:
+              <div style="display: flex; margin-bottom: 12px;">
+                <div style="flex: 0 1 160px; margin-right: 8px;">
+                  <a class="name" href="speakers/anna-tan.html">
+                    <img src="assets/img/schneider-electric.jpg" class="img-responsive">
+                 </a>
+                </div>
+                <div style="flex: 0 1 auto;">
+                  <a class="name" href="speakers/anna-tan.html">Anna Tan</a>,
+                  <span class="designation small"><em>Country HR Director</em></span>,
+                  <span class="company small"><b>Schneider Electric</b></span>                   
+                </div> 
+              </div>
+         <div class="row">
+         </div>
+      </div>
+   </div>
+   <div class="row agenda-timing-set">
+      <div class="col-sm-2 agenda-time">
+         <h4 class="text-uppercase">
+            12.30am                                        
+         </h4>
+      </div>
+      <div class="col-sm-10">
+         <h4>
+            Networking Lunch                                       
+         </h4>
+         <div class="row">
+         </div>
+      </div>
+   </div>
+   <div class="row agenda-timing-set">
+      <div class="col-sm-2 agenda-time">
+         <h4 class="text-uppercase">
+            13.30AM                                        
+         </h4>
+      </div>
+      <div class="col-sm-10">
+         <h4>
+            TOPIC 3                                   
+         </h4>
+         <p><b>Unlock the Motivation & Expectatinos of the Millenial Generations - Strategies of Transforming Your Leadership Styles to become a Magnet for the Millenial Talents to Join Your Firm</b></p>
+            <li>Dive into the wealth of experience from the lead speaker on his experiences, assiting companies to Attract, Engage & Retain the Millennial from his work with Fortunte 500s across 40 Countries since 2012</li>
+            <li>Understand the 4 Human Brain "Drugs' that Motivates the Millennial & Get Them more Driven to Work with You</li>
+            <li>Master the Skills & Expectations needed to Lead the Millennial Better, while Understanding the Root Causes of their Pains in their Careers</li>
+            <p>
+            </p>
+            <p>Speaker:
+              <div style="display: flex; margin-bottom: 12px;">
+                <div style="flex: 0 1 160px; margin-right: 8px;">
+                  <a class="name" href="speakers/michael-teoh.html">
+                    <img src="assets/img/thriving-talents.jpg" class="img-responsive">
+                 </a>
+                </div>
+                <div style="flex: 0 1 auto;">
+                  <a class="name" href="speakers/michael-teoh.html">Michael Teoh</a>,
+                  <span class="designation small"><em>Founder</em></span>,
+                  <span class="company small"><b>Thriving Talents</b></span>                   
+                </div> 
+              </div>
+         <div class="row">
+         </div>
+      </div>
+   </div>
+   <div class="row agenda-timing-set">
+      <div class="col-sm-2 agenda-time">
+         <h4 class="text-uppercase">
+            14.15PM                                        
+         </h4>
+      </div>
+      <div class="col-sm-10">
+         <h4>
+            TOPIC 4                                  
+         </h4>
+            <p><b>Innovating and Design Thinking to Drive Business Growth & Transformation </b></p>
+            <p>Fast paced change in the business environment is leading to business transformation and new expectations from business partners. Professionals and business leaders across the wolrd have integrated design thiking as an effective approach to integrate business and innovation</p> 
+            <p>
+            </p>
+            <p>Come explore how to apply design thinking, a globally recognised methodology and toolkit for a empathetic problem-solving, in your work.</p>
+            <p>
+            </p>
+            <p>You will leave knowing the answer to these questions:</p>
+              <li>What is Design Thinking and why are business leaders across Asia adopting it?</li>
+              <li>What are 3 examples of ways you can innocate using Design Thinking</li>
+              <li>5 tips how you can drive innovation and begin to design think</li>
+              <p>
+              </p>
+              <p>Speaker:</p>
+                <div style="display: flex; margin-bottom: 12px;">
+                  <div style="flex: 0 1 160px; margin-right: 8px;">
+                    <a class="name" href="speakers/christoffer-erichsen.html">
+                     <img src="assets/img/human-inc.jpg" class="img-responsive">
+                  </a>
+                </div>
+                <div style="flex: 0 1 auto;">
+                  <a class="name" href="speakers/christoffer-erichsen.html">Christoffer Erichsen</a>,
+                  <span class="designation small"><em>Chief Executive Officer</em></span>,
+                  <span class="company small"><b>Human Inc</b></span>                   
+                </div> 
+              </div>
+         <div class="row">
+         </div>
+      </div>
+   </div>
+   <div class="row agenda-timing-set">
+      <div class="col-sm-2 agenda-time">
+         <h4 class="text-uppercase">
+            15.00pm                                        
+         </h4>
+      </div>
+      <div class="col-sm-10">
+         <h4>
+            Afternoon Refreshments                                      
+         </h4>
+         <div class="row">
+         </div>
+      </div>
+   </div>
+   <div class="row agenda-timing-set">
+      <div class="col-sm-2 agenda-time">
+         <h4 class="text-uppercase">
+            15.30PM                                        
+         </h4>
+      </div>
+      <div class="col-sm-10">
+         <h4>
+            PANEL DISCUSSION 2                                      
+         </h4>
+            <p><b>Change Management - How can Organisations Evolve and Adapt to Stay Relevant in Today's Fast Paced Digital Environment</p>
+              <li>Behaving 'counter-culturally' - leading a movement which can lead to the occurence of a tipping point where new behaviours become the new normal</li>
+              <li>Introducing feedback mechanism to see what needs to be changed</li>
+              <li>How can organisations live and uphold the new values once it's been defined? How can we prevent old culture from fighting its rearguard action? What should be done when these values are tested?</li>
+            <p>Panelists:</p>
+              <div style="display: flex; margin-bottom: 12px;">
+                <div style="flex: 0 1 160px; margin-right: 8px;">
+                  <a class="name" href="speakers/adrian-lim.html">
+                    <img src="assets/img/vlt.jpg" class="img-responsive">
+                 </a>
+                </div>
+                <div style="flex: 0 1 auto;">
+                  <a class="name" href="speakers/adrian-lim.html">Adrian Lim</a>,
+                  <span class="designation small"><em>Chief Executive Officer</em></span>,
+                  <span class="company small"><b>VLT</b></span>                   
+                </div> 
+              </div>
+              <div style="display: flex; margin-bottom: 12px;">
+                <div style="flex: 0 1 160px; margin-right: 8px;">
+                  <a class="name" href="speakers/chinmay-sharma.html">
+                    <img src="assets/img/phillip-morris-2.jpg" class="img-responsive">
+                 </a>
+                </div>
+                <div style="flex: 0 1 auto;">
+                  <a class="name" href="speakers/chinmay-sharma.html">Chinmay Sharma</a>,
+                  <span class="designation small"><em>Director People & Culture (Malaysia)</em></span>,
+                  <span class="company small"><b>Phillip Morris International</b></span>                   
+                </div> 
+              </div>
+                <div style="display: flex; margin-bottom: 12px;">
+                  <div style="flex: 0 1 160px; margin-right: 8px;">
+                    <a class="name" href="speakers/christoffer-erichsen.html">
+                     <img src="assets/img/human-inc.jpg" class="img-responsive">
+                  </a>
+                </div>
+                <div style="flex: 0 1 auto;">
+                  <a class="name" href="speakers/christoffer-erichsen.html">Christoffer Erichsen</a>,
+                  <span class="designation small"><em>Chief Executive Officer</em></span>,
+                  <span class="company small"><b>Human Inc</b></span>                   
+                </div> 
+              </div>
+              <div style="display: flex; margin-bottom: 12px;">
+                <div style="flex: 0 1 160px; margin-right: 8px;">
+                  <a class="name" href="speakers/janet-lee.html">
+                    <img src="assets/img/95percent.jpg" class="img-responsive">
+                 </a>
+                </div>
+                <div style="flex: 0 1 auto;">
+                  <a class="name" href="speakers/janet-lee.html">Janet Lee</a>,
+                  <span class="designation small"><em>Chief Executive Officer & Culture Consultant</em></span>,
+                  <span class="company small"><b>95percent</b></span>                   
+                </div> 
+              </div>
+         <div class="row">
+         </div>
+      </div>
+   </div>
+   <div class="row agenda-timing-set">
+      <div class="col-sm-2 agenda-time">
+         <h4 class="text-uppercase">
+            16.30PM                                        
+         </h4>
+      </div>
+      <div class="col-sm-10">
+         <h4>
+            Video Presentation                                      
+         </h4>
+         <div class="row">
+         </div>
+      </div>
+   </div>
+   <div class="row agenda-timing-set">
+      <div class="col-sm-2 agenda-time">
+         <h4 class="text-uppercase">
+            16.45pm                                        
+         </h4>
+      </div>
+      <div class="col-sm-10">
+         <h4>
+            Wrap Up & End of Day 1                                         
+         </h4>
+         <div class="row">
+         </div>
+      </div>
+   </div>
+</div></div>      
+     </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-animation.js"></script>
+    <script src="assets/js/Countdown.js"></script>
+</body>
+
+</html>

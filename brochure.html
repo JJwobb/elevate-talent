@@ -50,7 +50,7 @@
     <div class="register-photo" style="background-image:url(&quot;assets/img/Backdrop-ELEVATE-final-final.jpg&quot;);background-size:cover;width:100%;">
         <div class="form-container">
             <div class="image-holder" style="background-image:url(&quot;assets/img/download-brochure-background-2.jpg&quot;);height:100%;"></div>
-            <form method="post">
+            <form method="post" name="submit-to-google-sheet">
                 <h2 class="text-center">Get your&nbsp;<strong>FREE</strong>&nbsp;brochure</h2>
                 <div class="form-group"><input class="form-control" type="email" name="email" placeholder="Email"></div>
                 <div class="form-group"><input class="form-control" type="text" name="name" placeholder="Name"></div>
@@ -95,6 +95,17 @@
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/bs-animation.js"></script>
     <script src="assets/js/Countdown.js"></script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyL4s_ThUcHUZaYPCUjdImi2kmP1HCqSUyFzAJz-cchRyeDhqGO/exec'
+        const form = document.forms['submit-to-google-sheet']
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => console.log('Success!', response))
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
 </body>
 
 </html>
