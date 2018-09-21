@@ -1,7 +1,7 @@
 $(document).ready(function() {
   // insert navbar
   const header = new Promise ((resolve, reject) => {
-    fetch('partials/header.html')
+    fetch('/partials/header.html')
     .then((response) => {
       resolve(response.text());
     })
@@ -15,7 +15,7 @@ $(document).ready(function() {
 
   // insert footer
   const footer = new Promise((resolve, reject) => {
-    fetch('partials/footer.html')
+    fetch('/partials/footer.html')
     .then((response) => {
       resolve(response.text());
     })
