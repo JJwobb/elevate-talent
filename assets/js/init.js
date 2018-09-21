@@ -1,29 +1,38 @@
 $(document).ready(function() {
-  // insert navbar
-  const header = new Promise ((resolve, reject) => {
-    fetch('/partials/header.html')
-    .then((response) => {
-      resolve(response.text());
-    })
-    .catch((error) => {
-      reject(error);
-    })
-  })
-  .then((response) => {
-    $('body').prepend(response);
-  });
+  var header_html, footer_html;
 
-  // insert footer
-  const footer = new Promise((resolve, reject) => {
-    fetch('/partials/footer.html')
-    .then((response) => {
-      resolve(response.text());
-    })
-    .catch((error) => {
-      reject(error);
-    })
-  })
+  header_
   .then((response) => {
-    $(response).insertBefore($('script')[0]);
-  });
+    header_html = response
+    $('body').prepend(header_html);
+  })
+
+  footer_
+  .then((response) => {
+    footer_html = response
+    $(footer_html).insertBefore($('script')[0]);
+  })  
+});
+
+const header_= new Promise ((resolve, reject) => {
+  fetch('/partials/header.html')
+  .then((response) => {
+    resolve(response.text());
+  })
+  .catch((error) => {
+    reject(error);
+  })
+});
+
+const footer_ = new Promise((resolve, reject) => {
+  fetch('/partials/footer.html')
+  .then((response) => {
+    resolve(response.text());
+  })
+  .catch((error) => {
+    reject(error);
+  })
+})
+.then((response) => {
+  $(response).insertBefore($('script')[0]);
 });
