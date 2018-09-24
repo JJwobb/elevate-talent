@@ -7,7 +7,7 @@
     <title>ELEVATE</title>
     <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,700">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web:400,600,700">
     <link rel="stylesheet" href="assets/css/Button-Change-Text-on-Hover.css">
@@ -22,27 +22,12 @@
     <link rel="stylesheet" href="assets/css/Navigation-with-Button.css">
     <link rel="stylesheet" href="assets/css/Registration-Form-with-Photo.css">
     <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="stylesheet" href="assets/css/untitled.css">
+    <link rel="stylesheet" href="assets/css/untitled.css">    
 </head>
 
-<body>
-    <div class="register-photo" style="background-image:url(&quot;assets/img/Backdrop-ELEVATE-final-final.jpg&quot;);background-size:cover;width:100%;">
-        <div class="form-container">
-            <div class="image-holder" style="background-image:url(&quot;assets/img/download-brochure-background-2.jpg&quot;);height:100%;"></div>
-            <form method="post" name="submit-to-google-sheet">
-                <h2 class="text-center">Get your&nbsp;<strong>FREE</strong>&nbsp;brochure</h2>
-                <div class="form-group"><input class="form-control" type="email" name="email" required="" placeholder="Email"></div>
-                <div class="form-group"><input class="form-control" type="text" name="name" placeholder="Name" required=""></div>
-                <div class="form-group"><input class="form-control" type="text" name="contactNumber" placeholder="Contact Number" required=""></div>
-                <div class="form-group"><input class="form-control" type="text" name="company" placeholder="Company" required=""></div>
-                <div class="form-group"><input class="form-control" type="text" name="position" placeholder="Position" required=""></div>
-                <div class="form-group">
-                    <div class="form-check"><label class="form-check-label"><input class="form-check-input" type="checkbox">I agree to the license terms.</label></div>
-                </div>
-                <div class="form-group"><button class="btn btn-primary btn-block" type="submit">Download</button></div>
-            </form>
-        </div>
-    </div>
+<body class="no_partials" style="background-image:url(&quot;assets/img/Backdrop-ELEVATE-final-final.jpg&quot;);background-size:contain;">
+	<h1>HELLO</h1>
+	<object data="https://s3-ap-southeast-1.amazonaws.com/wobb-app-test/uploads/jobs-malaysia/user_resumes/124ef262-9b5a-4a0e-a049-4df93c27f2c5/WOBB_ChngfongC_240918_0742.pdf" frameborder="0" height="750" scrolling="no" style="border: 0" type="application/pdf" width="100%" internalinstanceid="13"><param name="src" value="https://s3-ap-southeast-1.amazonaws.com/wobb-app-test/uploads/jobs-malaysia/user_resumes/124ef262-9b5a-4a0e-a049-4df93c27f2c5/WOBB_ChngfongC_240918_0742.pdf"></object>
     <script
     src="https://code.jquery.com/jquery-3.3.1.min.js"
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -52,17 +37,6 @@
     <script src="https://www.elevate-talent.com/assets/js/bs-animation.js"></script>
     <script src="https://www.elevate-talent.com/assets/js/Countdown.js"></script>
     <script src="assets/js/init.js"></script>
-    <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbyL4s_ThUcHUZaYPCUjdImi2kmP1HCqSUyFzAJz-cchRyeDhqGO/exec'
-        const form = document.forms['submit-to-google-sheet']
-
-        form.addEventListener('submit', e => {
-            e.preventDefault()
-            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-                .then(response => window.location.href = "/thank-you.html")
-                .catch(error => console.error('Error!', error.message))
-        })
-    </script>
 </body>
 
 </html>

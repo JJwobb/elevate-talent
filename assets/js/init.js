@@ -1,17 +1,19 @@
 $(document).ready(function() {
   var header_html, footer_html;
 
-  header_
-  .then((response) => {
-    header_html = response
-    $('body').prepend(header_html);
-  })
+  if ($('body.no_partials').length != 1) {
+    header_
+    .then((response) => {
+      header_html = response
+      $('body').prepend(header_html);
+    })
 
-  footer_
-  .then((response) => {
-    footer_html = response
-    $(footer_html).insertBefore($('script')[0]);
-  })  
+    footer_
+    .then((response) => {
+      footer_html = response
+      $(footer_html).insertBefore($('script')[0]);
+    }) 
+  } 
 });
 
 const header_= new Promise ((resolve, reject) => {
@@ -32,7 +34,4 @@ const footer_ = new Promise((resolve, reject) => {
   .catch((error) => {
     reject(error);
   })
-})
-.then((response) => {
-  $(response).insertBefore($('script')[0]);
 });

@@ -153,11 +153,11 @@ div.jumbotron.carousel-hero {
 }
 
 .main-container .content-container .sale-type-container .type.ontime {
-  color: #cc3349;
+  color: #007bff;
 }
 
 .main-container .content-container .sale-type-container .type.ontime span {
-  background: #cc3349;
+  background: #007bff;
   color: white;
 }
 
@@ -199,7 +199,7 @@ div.jumbotron.carousel-hero {
 }
 
 .main-container .content-container .table-container .table.active .table-title{
-  background-color: #cc3349;
+  background-color: #007bff;
 }
 
 .main-container .content-container .table-container .table .table-title {
@@ -228,7 +228,7 @@ div.jumbotron.carousel-hero {
 .main-container .content-container .table-container .table .table-cta a {
   width: 100%;
   text-transform: uppercase;
-  background-color: #cc3349;
+  background-color: #007bff;
   padding: 8px;
   color: white;
 }
