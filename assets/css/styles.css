@@ -118,7 +118,7 @@ div.jumbotron.carousel-hero {
   display: inline-block;
 }
 
-.main-container .content-container .tab-container .tab.active .tab-content p {
+.main-container .content-container .tab-container .tab.active .tab-content a {
   color: black;
 }
 
